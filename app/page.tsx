@@ -4,6 +4,7 @@ import Community from "@/components/community/community";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
+import ProductSuite from "@/components/product-suite/product-suite";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       {/* <Header />
       <Hero /> */}
 
-      <Chains />
+      <ProductSuite />
+
+      {/* <Chains /> */}
 
       {/* <Community /> */}
 
