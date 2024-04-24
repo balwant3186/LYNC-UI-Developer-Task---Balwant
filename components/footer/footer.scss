@@ -1,0 +1,238 @@
+@import "../../app/scss/base.scss";
+@import "../../app/scss/colors.scss";
+
+.app-footer {
+  overflow: hidden;
+  width: 100%;
+
+  .lync-gradient-img {
+    height: 8.875rem;
+    width: 37.713rem;
+    object-fit: contain;
+
+    @media screen and (max-width: 48em) {
+      height: 5.063rem;
+      width: 21.188rem;
+    }
+
+    @media screen and (max-width: 26.875em) {
+      height: 4.188rem;
+      width: 17.5rem;
+    }
+  }
+
+  .footer-title-text {
+    margin-top: 6.25rem;
+
+    @media screen and (max-width: 62em) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      margin-top: 3.75rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 26.875em) {
+      margin-top: 3.313rem;
+    }
+  }
+
+  .footer-cta-btn {
+    z-index: 5;
+    padding: 0.5rem 0.875rem;
+    width: 9.25rem;
+    height: 2.25rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(to bottom, #3f37c9 100%, #4cc9f0 100%);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-bg-content-container {
+    width: 100%;
+    padding-bottom: 7.125rem;
+    padding-top: 13rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: -1.125rem;
+
+    background: url("/assets/footer-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media screen and (max-width: 48em) {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+
+    @media screen and (max-width: 26.875em) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .footer-content-container {
+      padding-top: 1.25rem;
+      z-index: 5;
+      width: 100%;
+      max-width: 69rem;
+      flex-wrap: wrap;
+      column-gap: 6.25rem;
+      row-gap: 3.125rem;
+
+      @media screen and (max-width: 52.313em) {
+        justify-content: flex-start;
+      }
+
+      .footer-content-left {
+        .lync-text-logo {
+          width: 8.938rem;
+          height: auto;
+        }
+
+        .text-heading-3 {
+          font-weight: $font-fw-semibold;
+          letter-spacing: 0.02em;
+          margin-top: 0.75rem;
+          margin-bottom: 1.25rem;
+        }
+
+        .footer-social-links {
+          gap: 0.625rem;
+
+          .social-links {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+
+            &.farcatser {
+              border: 0.063rem solid rgba(255, 255, 255, 0.21);
+              background: linear-gradient(
+                93deg,
+                rgba(217, 217, 217, 0.07) 32.09%,
+                rgba(217, 217, 217, 0.05) 116.98%
+              );
+              backdrop-filter: blur(9.375rem);
+            }
+          }
+        }
+      }
+
+      .footer-content-middle {
+        gap: 1.313rem;
+        margin: 0 auto;
+
+        @media screen and (max-width: 30em) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 3.75rem;
+          grid-row-gap: 1.563rem;
+        }
+
+        @media screen and (max-width: 52.313em) {
+          margin: 0;
+        }
+
+        .middle-content-group {
+          &:nth-of-type(2) {
+            margin-right: 0.375rem;
+          }
+
+          .group-title {
+            font-weight: $font-fw-semibold;
+            margin-bottom: 0.313rem;
+          }
+
+          .group-content {
+            gap: 0.563rem;
+
+            .content-item {
+              color: $color-ui-gray-75;
+              font-weight: $font-fw-medium;
+            }
+          }
+        }
+      }
+
+      .footer-content-right {
+        .content-right-title {
+          font-weight: $font-fw-bold;
+        }
+
+        .content-right-subtext {
+          font-weight: $font-fw-bold;
+          margin-top: 0.438rem;
+          color: $color-ui-gray-75;
+        }
+
+        .email-form {
+          margin-top: 1.875rem;
+          width: 20rem;
+          height: 3.3rem;
+          background-image: url("/assets/input-background.png");
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          border-radius: 1.625rem;
+          overflow: hidden;
+          padding: 0.594rem 0.5rem;
+
+          .email-form-input {
+            padding: 0 0.25rem;
+
+            &::placeholder {
+              color: $color-ui-gray-75;
+              font-size: 0.75rem;
+              font-weight: $font-fw-bold;
+            }
+          }
+
+          .email-form-submit-btn {
+            width: 7.563rem;
+            height: 2.125rem;
+            padding: 0.594rem 0.792rem;
+            background: linear-gradient(225deg, #3f37c9 0%, #4cc9f0 100%);
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            border-radius: 1.594rem;
+          }
+        }
+      }
+    }
+
+    .copyright-text {
+      margin-top: 3.438rem;
+      font-weight: $font-fw-bold;
+      color: $color-ui-gray-75;
+      z-index: 5;
+
+      a {
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  .footer-gradient-container {
+    height: 64.781rem;
+    width: 56.531rem;
+    overflow: hidden;
+    transform: rotate(127.15deg);
+    bottom: -48rem;
+    left: -8rem;
+
+    @media screen and (max-width: 33.75em) {
+      left: -12rem;
+    }
+
+    img {
+      height: 64.781rem;
+      width: 56.531rem;
+    }
+  }
+}
