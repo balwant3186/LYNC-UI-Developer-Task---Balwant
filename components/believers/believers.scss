@@ -1,4 +1,6 @@
-@import "../../app//scss/base.scss" .believers-section {
+@import "../../app//scss/base.scss";
+
+.believers-section {
   position: relative;
   width: 100%;
   padding: 0 5rem;
@@ -88,14 +90,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes eth-animation {
-  from {
-    transform: translateY(0.5rem);
-  }
-  to {
-    transform: translateY(-7rem);
   }
 }

@@ -5,6 +5,7 @@ import Footer from "@/components/footer/footer";
 import GamingSection from "@/components/gaming-section/gaming-section";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
+import PowerUpSection from "@/components/power-up-section/power-up-section";
 import ProductSuite from "@/components/product-suite/product-suite";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
       {/* <Header />
       <Hero /> */}
 
-      <GamingSection />
+      <PowerUpSection />
+
+      {/* <GamingSection /> */}
 
       {/* <ProductSuite /> */}
 

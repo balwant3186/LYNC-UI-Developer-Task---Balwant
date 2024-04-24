@@ -1,0 +1,197 @@
+@import "../../app/scss/base.scss";
+@import "../../app/scss/colors.scss";
+
+.power-up-section {
+  margin-top: 8.125rem;
+  padding: 0 5rem;
+  padding-bottom: 11.5625rem;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 48em) {
+    padding: 0 1.875rem;
+    padding-bottom: 8.75rem;
+    margin-top: 7.1875rem;
+  }
+
+  @media screen and (max-width: 26.875em) {
+    padding: 0 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-top: 5.625rem;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/powerup-gradient.png");
+    background-position: center;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+  }
+
+  .power-up-title {
+    max-width: 24ch;
+    font-weight: $font-fw-black;
+    z-index: 5;
+
+    .gradient-text {
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 62em) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .power-up-subtext {
+    z-index: 5;
+    margin-top: 1rem;
+    max-width: 46ch;
+    font-weight: $font-fw-semibold;
+    color: $color-ui-white-60;
+
+    @media screen and (max-width: 62em) {
+      font-size: 1.125rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1rem;
+    }
+  }
+
+  .power-up-card-container {
+    background: url("/assets/powerup-card.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 69rem;
+    padding: 3.3125rem 5rem;
+    margin-top: 6.25rem;
+    z-index: 5;
+
+    @media screen and (max-width: 80em) {
+      padding: 2.25rem 2.4375rem;
+      margin-top: 2.625rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      padding: 1.4375rem 1.75rem;
+      margin-top: 1.875rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      overflow: hidden;
+      border-radius: 3.2rem;
+      border-bottom-right-radius: 0;
+    }
+
+    .power-up-card-title {
+      font-weight: $font-fw-bold;
+      margin-bottom: 1rem;
+
+      .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @media screen and (max-width: 80em) {
+        font-size: 1.5625rem;
+      }
+
+      @media screen and (max-width: 48em) {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    .power-up-points-list {
+      .power-up-points-items {
+        font-weight: $font-fw-medium;
+        margin-bottom: 1.25rem;
+
+        @media screen and (max-width: 80em) {
+          font-size: 1.375rem;
+          font-weight: 400;
+          margin-bottom: 0.8125rem;
+        }
+
+        @media screen and (max-width: 48em) {
+          font-size: 0.625rem;
+          font-weight: 400;
+          margin-bottom: 0.6875rem;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          height: 2rem;
+          width: 2rem;
+          background: url("/assets/star-four-points.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 1rem;
+
+          @media screen and (max-width: 80em) {
+            height: 1.3125rem;
+            width: 1.3125rem;
+            margin-right: 0.6875rem;
+          }
+
+          @media screen and (max-width: 48em) {
+            height: 1rem;
+            width: 1rem;
+            margin-right: 0.5rem;
+          }
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .eth-animation-img {
+      position: absolute;
+      height: 62.5rem;
+      width: 30rem;
+      object-fit: cover;
+      bottom: -4rem;
+      right: -8rem;
+      animation: eth-animation 2.5s linear infinite alternate;
+
+      @media screen and (max-width: 80em) {
+        height: 56.25rem;
+        width: 27rem;
+        right: -7rem;
+      }
+
+      @media screen and (max-width: 62em) {
+        height: 50rem;
+        width: 24rem;
+        right: -7rem;
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes eth-animation {
+  from {
+    transform: translateY(0.5rem);
+  }
+  to {
+    transform: translateY(-7rem);
+  }
+}
