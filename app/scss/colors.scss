@@ -1,0 +1,33 @@
+$color-ui-black: #000000;
+$color-ui-white: #ffffff;
+$color-ui-white-60: #dadddb;
+$color-ui-gray: #1c1c1c;
+$color-ui-gray-light: #d9d9d9;
+$color-ui-gray-75: #757575;
+$color-ui-purple: #f72585;
+$color-ui-violet: #7209b7;
+$color-ui-violet-dark: #560bad;
+$color-ui-blue: #3a0ca3;
+$color-ui-sky-blue: #4cc9f0;
+$color-ui-dark-blue: #020617;
+
+$gradient-primary: linear-gradient(
+  45deg,
+  var($color-ui-purple),
+  var($color-ui-violet)
+);
+$gradient-secondary: linear-gradient(
+  225deg,
+  var($color-ui-blue),
+  var($color-ui-sky-blue)
+);
+$gradient-gray: linear-gradient(
+  45deg,
+  var($color-ui-gray-light) 7%,
+  var($color-ui-gray-light) 5%
+);
+$gradient-border: linear-gradient(
+  45deg,
+  var($color-ui-white) 21%,
+  var($color-ui-white) 0%
+);

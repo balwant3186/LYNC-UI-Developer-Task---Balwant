@@ -1,0 +1,39 @@
+@import "./scss/colors";
+@import "./scss/base";
+
+body {
+  display: block;
+  width: 100%;
+  min-height: 100dvh;
+  font-family: $font-ff-satoshi;
+  font-size: $font-fs-body-1;
+  font-weight: $font-fw-regular;
+  line-height: $text-lh-base;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-image: url("/assets/background-grid.png");
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-color: $color-ui-dark-blue;
+  color: $color-ui-white;
+  accent-color: $color-ui-white;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
