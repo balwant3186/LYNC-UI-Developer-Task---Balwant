@@ -1,4 +1,5 @@
 import Believers from "@/components/believers/believers";
+import BlockchainGaming from "@/components/blockchain-gaming/blockchain-gaming";
 import Chains from "@/components/chains/chains";
 import Community from "@/components/community/community";
 import Footer from "@/components/footer/footer";
@@ -14,17 +15,18 @@ export default function Home() {
       {/* <Header />
       <Hero /> */}
 
+      <BlockchainGaming />
       <PowerUpSection />
 
-      {/* <GamingSection /> */}
+      <GamingSection />
+      {/* 
+      <ProductSuite />
 
-      {/* <ProductSuite /> */}
+      <Chains />
 
-      {/* <Chains /> */}
+      <Community />
 
-      {/* <Community /> */}
-
-      {/* <Believers />
+      <Believers />
 
       <Footer /> */}
     </div>

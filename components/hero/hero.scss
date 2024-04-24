@@ -141,12 +141,13 @@
 
       .content-text {
         width: 100%;
-        max-width: 912px;
+        max-width: 1000px;
         margin: 40px 0;
         font-weight: $font-fw-semibold;
         z-index: 5;
 
         .gradient-text {
+          background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-weight: $font-fw-extrabold;

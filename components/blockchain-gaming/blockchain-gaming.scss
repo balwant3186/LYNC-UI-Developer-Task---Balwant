@@ -1,0 +1,106 @@
+@import "../../app/scss/base.scss";
+@import "../../app/scss/colors.scss";
+
+.blockchain-gaming-section {
+  margin-top: 8.125rem;
+  padding: 0 5rem;
+  padding-bottom: 11.5625rem;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 48em) {
+    padding: 0 1.875rem;
+    padding-bottom: 8.75rem;
+    margin-top: 7.1875rem;
+  }
+
+  @media screen and (max-width: 26.875em) {
+    padding: 0 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-top: 5.625rem;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/product-suit-background.svg");
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .blockchain-gaming-title {
+    max-width: 24ch;
+    font-weight: $font-fw-black;
+    z-index: 5;
+
+    .gradient-text {
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 62em) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .blockchain-gaming-subtext {
+    z-index: 5;
+    margin-top: 1rem;
+    max-width: 46ch;
+    font-weight: $font-fw-semibold;
+    color: $color-ui-white-60;
+
+    @media screen and (max-width: 62em) {
+      font-size: 1.125rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1rem;
+    }
+  }
+
+  .blockchain-gaming-img-container {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 69rem;
+    padding: 3.3125rem 5rem;
+    margin-top: 3.25rem;
+    z-index: 5;
+
+    @media screen and (max-width: 80em) {
+      padding: 2.25rem 2.4375rem;
+      margin-top: 2.625rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      padding: 1.4375rem 1.75rem;
+      margin-top: 1.875rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      overflow: hidden;
+      border-radius: 3.2rem;
+      border-bottom-right-radius: 0;
+    }
+
+    img {
+      width: 10rem;
+      height: 5rem;
+      margin: 0 1rem 3rem 0;
+      object-fit: contain;
+    }
+  }
+}
