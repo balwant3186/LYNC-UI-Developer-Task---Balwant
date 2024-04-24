@@ -1,4 +1,5 @@
 import Believers from "@/components/believers/believers";
+import Chains from "@/components/chains/chains";
 import Community from "@/components/community/community";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
@@ -10,7 +11,9 @@ export default function Home() {
       {/* <Header />
       <Hero /> */}
 
-      <Community />
+      <Chains />
+
+      {/* <Community /> */}
 
       {/* <Believers />
 

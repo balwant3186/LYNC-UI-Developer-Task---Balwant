@@ -1,0 +1,158 @@
+@import "../../app/scss/base.scss";
+
+.homepage-chains-section {
+  margin-top: 3.125rem;
+  padding: 0 5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 14.0625rem;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 48em) {
+    padding: 0 1.875rem;
+    padding-top: 7.5rem;
+    padding-bottom: 14.0625rem;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding-bottom: 6.25rem;
+  }
+
+  @media screen and (max-width: 26.875em) {
+    padding: 0 1.25rem;
+    padding-top: 7.5rem;
+    padding-bottom: 4.6875rem;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/chains-section-overlay.png");
+    background-position: center;
+    background-size: 100% 46.5625em;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 40em) {
+      background-size: 100% 100%;
+    }
+  }
+
+  .chains-section-title {
+    z-index: 5;
+    max-width: 20ch;
+    font-weight: var(--font-fw-black);
+    margin-bottom: 4rem;
+
+    .gradient-secondary {
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 62em) {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .chains-img-container {
+    max-width: 64.6875rem;
+    width: 100%;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    position: relative;
+
+    .chains-imgs {
+      object-fit: contain;
+
+      &[alt="ethereum"] {
+        width: 12.4375em;
+        height: 3.125em;
+
+        @media screen and (max-width: 62em) {
+          width: 8.6875em;
+          height: 2.1875em;
+        }
+      }
+
+      &[alt="polygon"] {
+        width: 12.6875em;
+        height: 4.125em;
+
+        @media screen and (max-width: 62em) {
+          width: 8.875em;
+          height: 2.875em;
+        }
+      }
+
+      &[alt="aptos"] {
+        width: 7.8125em;
+        height: 1.9375em;
+
+        @media screen and (max-width: 62em) {
+          width: 5.4375em;
+          height: 1.375em;
+        }
+      }
+
+      &[alt="zksync"] {
+        width: 13.5em;
+        height: 2.625em;
+
+        @media screen and (max-width: 62em) {
+          width: 9.4375em;
+          height: 1.8125em;
+        }
+      }
+
+      &[alt="arbitrum"] {
+        width: 12.5em;
+        height: 3.625em;
+
+        @media screen and (max-width: 62em) {
+          width: 9.1875em;
+          height: 2.5625em;
+        }
+      }
+
+      &[alt="astar"] {
+        width: 11.75em;
+        height: 3.75em;
+
+        @media screen and (max-width: 62em) {
+          width: 8.1875em;
+          height: 2.625em;
+        }
+      }
+
+      &[alt="saga"] {
+        width: 10.625em;
+        height: 2.625em;
+
+        @media screen and (max-width: 62em) {
+          width: 7.4375em;
+          height: 1.8125em;
+        }
+      }
+
+      &[alt="avalanche"] {
+        width: 13.625em;
+        height: 2.75em;
+
+        @media screen and (max-width: 62em) {
+          width: 9.5em;
+          height: 1.9375em;
+        }
+      }
+    }
+  }
+}
