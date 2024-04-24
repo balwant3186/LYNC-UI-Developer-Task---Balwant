@@ -1,0 +1,965 @@
+// .homepage-about-section {
+//     padding-bottom: toRem(37);
+//     padding-top: 4.25rem;
+//     width: 100%;
+
+//     &::after {
+//       position: absolute;
+//       bottom: 0;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/about-background-overlay.png");
+//       background-position: center bottom;
+//       background-size: 100% toRem(850);
+//       background-repeat: no-repeat;
+//     }
+
+//     .blockchain-gaming {
+//       margin: 0 toRem(80);
+//       margin-top: toRem(115);
+//       position: relative;
+
+//       &::after {
+//         position: absolute;
+//         content: "";
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         background: url("../assets/blockchain-gaming-overlay.png");
+//         background-position: center;
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//       }
+
+//       @media screen and (max-width: toEm(768)) {
+//         margin: 0 toRem(30);
+//         margin-top: toRem(115);
+//       }
+
+//       @media screen and (max-width: toEm(430)) {
+//         margin: 0 toRem(20);
+//         margin-top: toRem(95);
+//       }
+
+//       .blockchain-gaming-title {
+//         z-index: 5;
+//         max-width: 24ch;
+//         font-weight: var($font-fw-black);
+
+//         @media screen and (max-width: toEm(992)) {
+//           font-size: toRem(32);
+//         }
+
+//         @media screen and (max-width: toEm(540)) {
+//           font-size: toRem(24);
+//         }
+
+//         .gradient-text {
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//         }
+//       }
+
+//       .gaming-imgs-container {
+//         margin-top: toRem(75);
+//         column-gap: 4rem;
+//         row-gap: 1.5rem;
+
+//         @media screen and (max-width: toEm(992)) {
+//           column-gap: 4rem;
+//           row-gap: 2rem;
+//         }
+
+//         @media screen and (max-width: toEm(768)) {
+//           column-gap: 3rem;
+//           row-gap: 1.5rem;
+//         }
+
+//         @media screen and (max-width: toEm(540)) {
+//           column-gap: 2rem;
+//           row-gap: 1rem;
+//         }
+
+//         @media screen and (max-width: toEm(540)) {
+//           margin-top: toRem(25);
+//         }
+
+//         .gaming-imgs {
+//           object-fit: contain;
+//           width: 100%;
+//           height: 100%;
+//           max-width: 12rem;
+//           max-height: 6.5rem;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+
+//           @media screen and (max-width: toEm(992)) {
+//             max-width: 10rem;
+//             max-height: 5.5rem;
+//           }
+
+//           @media screen and (max-width: toEm(768)) {
+//             max-width: 8rem;
+//             max-height: 4.5rem;
+//           }
+
+//           @media screen and (max-width: toEm(540)) {
+//             max-width: 6rem;
+//             max-height: 3.5rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .power-up-section {
+//     margin-top: toRem(130);
+//     padding: 0 toRem(80);
+//     padding-bottom: toRem(185);
+//     position: relative;
+//     width: 100%;
+
+//     @media screen and (max-width: toEm(768)) {
+//       padding: 0 toRem(30);
+//       padding-bottom: toRem(140);
+//       margin-top: toRem(115);
+//     }
+
+//     @media screen and (max-width: toEm(430)) {
+//       padding: 0 toRem(20);
+//       padding-bottom: toRem(20);
+//       margin-top: toRem(90);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/powerup-gradient.png");
+//       background-position: center;
+//       background-size: 100% 125%;
+//       background-repeat: no-repeat;
+//     }
+
+//     .power-up-title {
+//       max-width: 24ch;
+//       font-weight: var($font-fw-black);
+//       z-index: 5;
+
+//       .gradient-text {
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//       }
+
+//       @media screen and (max-width: toEm(992)) {
+//         font-size: toRem(32);
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         font-size: toRem(24);
+//       }
+//     }
+
+//     .power-up-subtext {
+//       z-index: 5;
+//       margin-top: 1rem;
+//       max-width: 46ch;
+//       font-weight: var($font-fw-semibold);
+//       color: var($color-ui-white-60);
+
+//       @media screen and (max-width: toEm(992)) {
+//         font-size: toRem(18);
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         font-size: toRem(16);
+//       }
+//     }
+
+//     .power-up-card-container {
+//       background: url("../assets/powerup-card.png");
+//       background-position: center;
+//       background-size: 100% 100%;
+//       background-repeat: no-repeat;
+//       width: 100%;
+//       max-width: toRem(1104);
+//       padding: toRem(53) toRem(80);
+//       margin-top: toRem(100);
+//       z-index: 5;
+
+//       @media screen and (max-width: toEm(1280)) {
+//         padding: toRem(36) toRem(39);
+//         margin-top: toRem(42);
+//       }
+
+//       @media screen and (max-width: toEm(768)) {
+//         padding: toRem(23) toRem(28);
+//         margin-top: toRem(30);
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         overflow: hidden;
+//         border-radius: toRem(32);
+//         border-bottom-right-radius: 0;
+//       }
+
+//       .power-up-card-title {
+//         font-weight: var($font-fw-bold);
+//         margin-bottom: 1rem;
+
+//         @media screen and (max-width: toEm(1280)) {
+//           font-size: toRem(25);
+//         }
+
+//         @media screen and (max-width: toEm(768)) {
+//           font-size: toRem(16);
+//           font-weight: 500;
+//         }
+//       }
+
+//       .power-up-points-list {
+//         .power-up-points-items {
+//           font-weight: var($font-fw-medium);
+//           margin-bottom: toRem(20);
+
+//           @media screen and (max-width: toEm(1280)) {
+//             font-size: toRem(22);
+//             font-weight: 400;
+//             margin-bottom: toRem(13);
+//           }
+
+//           @media screen and (max-width: toEm(768)) {
+//             font-size: toRem(10);
+//             font-weight: 400;
+//             margin-bottom: toRem(11);
+//           }
+
+//           &::before {
+//             content: "";
+//             display: block;
+//             height: 2rem;
+//             width: 2rem;
+//             background: url("../assets/star-four-points.png");
+//             background-size: 100% 100%;
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             margin-right: 1rem;
+
+//             @media screen and (max-width: toEm(1280)) {
+//               height: toRem(21);
+//               width: toRem(21);
+//               margin-right: toRem(11);
+//             }
+
+//             @media screen and (max-width: toEm(1280)) {
+//               height: toRem(16);
+//               width: toRem(16);
+//               margin-right: toRem(8);
+//             }
+//           }
+
+//           &:last-of-type {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+
+//       .eth-animation-img {
+//         position: absolute;
+//         height: toRem(1000);
+//         width: toRem(480);
+//         object-fit: cover;
+//         bottom: -4rem;
+//         right: -8rem;
+//         animation: eth-animation 2.5s linear infinite alternate;
+
+//         @media screen and (max-width: toEm(1280)) {
+//           height: toRem(900);
+//           width: toRem(432);
+//           right: -7rem;
+//         }
+
+//         @media screen and (max-width: toEm(992)) {
+//           height: 0;
+//           width: 0;
+//           right: -7rem;
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+
+//   .gaming-grid-section {
+//     position: relative;
+//     width: 100%;
+//     padding: 0 toRem(80);
+
+//     @media screen and (max-width: toEm(768)) {
+//       padding: 0 toRem(30);
+//     }
+
+//     @media screen and (max-width: toEm(430)) {
+//       padding: 0 toRem(20);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/blockchain-gaming-overlay.png");
+//       background-position: center;
+//       background-size: 100% 100%;
+//       background-repeat: no-repeat;
+//     }
+
+//     .grid-section-wrapper {
+//       width: 100%;
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       max-width: toRem(1104);
+//       grid-gap: 1rem;
+
+//       @media screen and (max-width: toEm(1100)) {
+//         grid-template-columns: 1fr;
+//       }
+
+//       .grid-large-item {
+//         height: toRem(329);
+//         padding: toRem(31) toRem(39);
+//         border-radius: toRem(32);
+//         background-image: url("../assets/docs-card-background.png");
+//         background-size: 100% 100%;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         position: relative;
+//         z-index: 5;
+//         border: 1px solid hsl(0, 0%, 100%, 0.15);
+
+//         @media screen and (max-width: toEm(540)) {
+//           height: toRem(200);
+//           padding: toRem(25) toRem(22);
+//           background-size: 100% toRem(210);
+//         }
+
+//         .title {
+//           font-weight: var($font-fw-bold);
+//           max-width: 18ch;
+
+//           @media screen and (max-width: toEm(540)) {
+//             font-size: toRem(16);
+//           }
+//         }
+
+//         .subtext {
+//           display: block;
+//           color: var($color-ui-gray-75);
+//           max-width: 20ch;
+//           font-weight: var($font-fw-bold);
+//           margin-top: 1rem;
+
+//           @media screen and (max-width: toEm(540)) {
+//             font-size: toRem(10);
+//             margin-top: toRem(8);
+//           }
+//         }
+
+//         .cta-btn {
+//           background: var($color-ui-white);
+//           padding: toRem(8) toRem(14);
+//           font-size: toRem(14);
+//           color: var($color-ui-black);
+//           font-weight: var($font-fw-bold);
+//           border-radius: toRem(20);
+//           width: max-content;
+//           margin-top: toRem(24);
+
+//           @media screen and (max-width: toEm(540)) {
+//             margin-top: toRem(12);
+//           }
+//         }
+
+//         .game-animatiom {
+//           width: toRem(200);
+//           height: toRem(200);
+//           transform: rotate(15deg);
+//           position: absolute;
+//           right: 1rem;
+//           top: 50%;
+//           transform: translateY(-50%);
+
+//           @media screen and (max-width: toEm(540)) {
+//             width: toRem(150);
+//             height: toRem(150);
+//           }
+//         }
+//       }
+
+//       .grid-items-container {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-gap: 1rem;
+//         height: toRem(329);
+
+//         @media screen and (max-width: toEm(540)) {
+//           grid-template-columns: 1fr;
+//           height: unset;
+//         }
+
+//         .grid-items-inner-container {
+//           display: grid;
+//           grid-template-columns: 1fr;
+//           grid-template-rows: 1fr 1fr;
+//           grid-gap: 1rem;
+
+//           .grid-small-items {
+//             z-index: 5;
+//             border-radius: toRem(32);
+//             padding: toRem(12) toRem(20);
+//             background: linear-gradient(
+//               to right,
+//               hsl(0, 0%, 85%, 0.07),
+//               hsl(0, 0%, 85%, 0.05)
+//             );
+//             border: 1px solid hsl(0, 0%, 100%, 0.15);
+
+//             .number-text {
+//               -webkit-background-clip: text;
+//               -webkit-text-fill-color: transparent;
+//               font-size: toRem(38);
+//               font-weight: var($font-fw-black);
+//             }
+
+//             .subtext {
+//               display: block;
+//               color: var($color-ui-gray-75);
+//               max-width: 16ch;
+//               font-weight: var($font-fw-bold);
+//             }
+//           }
+//         }
+
+//         .grid-medium-items {
+//           z-index: 5;
+//           border-radius: toRem(32);
+//           padding: toRem(12) toRem(20);
+//           background: linear-gradient(
+//             to right,
+//             hsl(0, 0%, 85%, 0.07),
+//             hsl(0, 0%, 85%, 0.05)
+//           );
+//           border: 1px solid hsl(0, 0%, 100%, 0.15);
+//           overflow: hidden;
+//           position: relative;
+
+//           @media screen and (max-width: toEm(540)) {
+//             height: toRem(250);
+//           }
+
+//           .number-text {
+//             -webkit-background-clip: text;
+//             -webkit-text-fill-color: transparent;
+//             font-size: toRem(38);
+//             font-weight: var($font-fw-black);
+//           }
+
+//           .subtext {
+//             display: block;
+//             color: var($color-ui-gray-75);
+//             max-width: 16ch;
+//             font-weight: var($font-fw-bold);
+//           }
+
+//           .medium-animation {
+//             transform: rotate(8.4deg);
+//             width: toRem(200);
+//             height: toRem(200);
+//             position: absolute;
+//             right: 0;
+//             bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .product-suit {
+//     margin-top: toRem(145);
+//     padding-bottom: toRem(114);
+//     position: relative;
+//     width: 100%;
+//     padding: 0 toRem(80);
+
+//     @media screen and (max-width: toEm(768)) {
+//       padding: 0 toRem(30);
+//     }
+
+//     @media screen and (max-width: toEm(430)) {
+//       padding: 0 toRem(20);
+//     }
+
+//     &::after {
+//       display: block;
+//       position: absolute;
+//       content: "";
+//       bottom: 0;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/product-suit-background.png");
+//       background-size: 100% 100%;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//     }
+
+//     .title {
+//       font-weight: var($font-fw-black);
+//       margin-bottom: toRem(63);
+
+//       .gradient-secondary {
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//       }
+
+//       @media screen and (max-width: toEm(992)) {
+//         font-size: toRem(32);
+//         margin-bottom: toRem(45);
+//       }
+
+//       @media screen and (max-width: toEm(768)) {
+//         margin-bottom: toRem(32);
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         font-size: toRem(24);
+//         margin-bottom: toRem(20);
+//       }
+//     }
+
+//     .product-cards-container {
+//       z-index: 2;
+//       display: grid;
+//       grid-template-columns: toRem(304) toRem(304) toRem(304);
+//       grid-gap: 1rem;
+
+//       @media screen and (max-width: toEm(992)) {
+//         grid-template-columns: toRem(304) toRem(304);
+//       }
+
+//       @media screen and (max-width: toEm(768)) {
+//         grid-template-columns: toRem(304);
+//       }
+
+//       .product-card {
+//         border-radius: toRem(20);
+//         padding: toRem(45) toRem(22);
+//         background: linear-gradient(
+//           to bottom,
+//           hsl(229, 84%, 5%, 0),
+//           hsl(229, 84%, 5%, 0.8)
+//         );
+
+//         .card-title {
+//           font-weight: var($font-fw-black);
+//           margin-top: toRem(22);
+//         }
+
+//         .subtext {
+//           color: var($color-ui-gray-75);
+//           padding-right: toRem(20);
+//           margin-top: toRem(6);
+//           line-height: 1.35;
+//         }
+
+//         &:nth-of-type(n + 4) {
+//           margin-top: toRem(-23 - 16);
+//         }
+
+//         @media screen and (max-width: toEm(992)) {
+//           &:nth-of-type(n + 4) {
+//             margin-top: 0;
+//           }
+//           &:nth-of-type(n + 3) {
+//             margin-top: -1rem;
+//           }
+//         }
+
+//         @media screen and (max-width: toEm(768)) {
+//           &:nth-of-type(n + 3) {
+//             margin-top: 0;
+//           }
+
+//           &:nth-of-type(n + 2) {
+//             margin-top: -1rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .homepage-chains-section {
+//     margin-top: toRem(50);
+//     padding: 0 toRem(80);
+//     padding-top: toRem(120);
+//     padding-bottom: toRem(225);
+//     position: relative;
+//     width: 100%;
+
+//     @media screen and (max-width: toEm(768)) {
+//       padding: 0 toRem(30);
+//       padding-top: toRem(120);
+//       padding-bottom: toRem(225);
+//     }
+
+//     @media screen and (max-width: toEm(640)) {
+//       padding-bottom: toRem(100);
+//     }
+
+//     @media screen and (max-width: toEm(430)) {
+//       padding: 0 toRem(20);
+//       padding-top: toRem(120);
+//       padding-bottom: toRem(75);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       bottom: 0;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/chains-section-overlay.png");
+//       background-position: center;
+//       background-size: 100% toRem(745);
+//       background-repeat: no-repeat;
+
+//       @media screen and (max-width: toEm(640)) {
+//         background-size: 100% 100%;
+//       }
+//     }
+
+//     .chains-section-title {
+//       z-index: 5;
+//       max-width: 20ch;
+//       font-weight: var($font-fw-black);
+//       margin-bottom: 4rem;
+
+//       .gradient-secondary {
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//       }
+
+//       @media screen and (max-width: toEm(992)) {
+//         font-size: toRem(32);
+//         margin-bottom: 3rem;
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         font-size: toRem(24);
+//         margin-bottom: 2rem;
+//       }
+//     }
+
+//     .chains-img-container {
+//       max-width: toRem(1035);
+//       width: 100%;
+//       column-gap: 2rem;
+//       row-gap: 1rem;
+//       position: relative;
+
+//       .chains-imgs {
+//         object-fit: contain;
+
+//         &[alt="ethereum"] {
+//           width: toRem(199);
+//           height: toRem(50);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(139);
+//             height: toRem(35);
+//           }
+//         }
+
+//         &[alt="polygon"] {
+//           width: toRem(203);
+//           height: toRem(66);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(142);
+//             height: toRem(46);
+//           }
+//         }
+
+//         &[alt="aptos"] {
+//           width: toRem(125);
+//           height: toRem(31);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(87);
+//             height: toRem(22);
+//           }
+//         }
+
+//         &[alt="zksync"] {
+//           width: toRem(216);
+//           height: toRem(42);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(151);
+//             height: toRem(29);
+//           }
+//         }
+
+//         &[alt="arbitrum"] {
+//           width: toRem(200);
+//           height: toRem(58);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(147);
+//             height: toRem(41);
+//           }
+//         }
+
+//         &[alt="astar"] {
+//           width: toRem(188);
+//           height: toRem(60);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(131);
+//             height: toRem(42);
+//           }
+//         }
+
+//         &[alt="saga"] {
+//           width: toRem(170);
+//           height: toRem(42);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(119);
+//             height: toRem(29);
+//           }
+//         }
+
+//         &[alt="avalanche"] {
+//           width: toRem(218);
+//           height: toRem(44);
+
+//           @media screen and (max-width: toEm(992)) {
+//             width: toRem(152);
+//             height: toRem(31);
+//           }
+//         }
+//       }
+//     }
+
+//     .more-text {
+//       z-index: 5;
+//       border-bottom: 1px solid var($color-ui-gray-75);
+//       color: var($color-ui-gray-75);
+//       margin-top: toRem(20);
+//       font-weight: var($font-fw-bold);
+//     }
+//   }
+
+//   .community-section {
+//     position: relative;
+//     padding-bottom: toRem(180);
+//     width: 100%;
+
+//     @media screen and (max-width: toEm(992)) {
+//       padding-bottom: toRem(125);
+//     }
+
+//     @media screen and (max-width: toEm(540)) {
+//       padding-bottom: toRem(100);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       bottom: 0;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background: url("../assets/chains-section-overlay.png");
+//       background-position: center;
+//       background-size: 100% toRem(745);
+//       background-repeat: no-repeat;
+
+//       @media screen and (max-width: toEm(992)) {
+//         background-size: contain;
+//       }
+//     }
+
+//     .community-content-container {
+//       margin: 0 toRem(80);
+//       position: relative;
+
+//       @media screen and (max-width: toEm(768)) {
+//         margin: 0 toRem(30);
+//       }
+
+//       @media screen and (max-width: toEm(430)) {
+//         margin: 0 toRem(20);
+//       }
+
+//       .community-patter-img {
+//         height: auto;
+//         width: toRem(800);
+//         height: auto;
+//         max-height: unset;
+//       }
+
+//       .content {
+//         position: absolute;
+
+//         .content-title {
+//           z-index: 5;
+//           font-weight: var($font-fw-black);
+//           max-width: 10ch;
+
+//           .gradient-secondary {
+//             -webkit-background-clip: text;
+//             -webkit-text-fill-color: transparent;
+//           }
+
+//           @media screen and (max-width: toEm(768)) {
+//             font-size: toRem(32);
+//           }
+
+//           @media screen and (max-width: toEm(540)) {
+//             font-size: toRem(24);
+//           }
+
+//           @media screen and (max-width: toEm(430)) {
+//             font-size: toRem(20);
+//           }
+//         }
+
+//         .cta-btn {
+//           z-index: 5;
+//           padding: toRem(8) toRem(14);
+//           border-radius: toRem(20);
+//           background: linear-gradient(225deg, #3f37c9 0%, #4cc9f0 100%);
+//           font-size: toRem(14);
+//           font-weight: 600;
+//           margin-top: toRem(21);
+//           letter-spacing: 0.03em;
+//           gap: toRem(6);
+
+//           .telegram-icon {
+//             width: toRem(22.6);
+//             height: toRem(22.6);
+//             object-fit: contain;
+//           }
+
+//           @media screen and (max-width: toEm(540)) {
+//             margin-top: toRem(18);
+//           }
+
+//           @media screen and (max-width: toEm(430)) {
+//             margin-top: toRem(14);
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .believers-section {
+//     position: relative;
+//     width: 100%;
+//     padding: 0 toRem(80);
+
+//     @media screen and (max-width: toEm(768)) {
+//       padding: 0 toRem(30);
+//       margin-top: toRem(28);
+//     }
+
+//     @media screen and (max-width: toEm(430)) {
+//       padding: 0 toRem(20);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: toRem(436);
+//       background: url("../assets/believers-section-overlay.png");
+//       background-position: center;
+//       background-size: 100% toRem(361);
+//       background-repeat: no-repeat;
+//     }
+
+//     .believers-title {
+//       z-index: 5;
+//       font-weight: var($font-fw-black);
+
+//       .gradient-secondary {
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//       }
+
+//       @media screen and (max-width: toEm(992)) {
+//         font-size: toRem(32);
+//       }
+
+//       @media screen and (max-width: toEm(540)) {
+//         font-size: toRem(24);
+//       }
+//     }
+
+//     .believers-grid {
+//       gap: 1rem;
+//       max-width: toRem(1035);
+//       margin-top: toRem(56);
+
+//       .believers-grid-items {
+//         z-index: 5;
+//         height: toRem(105);
+//         width: toRem(226);
+//         background-image: url("../assets/believers-img-background.png");
+//         background-position: center;
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+
+//         @media screen and (max-width: toEm(540)) {
+//           height: toRem(84);
+//           width: toRem(178);
+//         }
+
+//         .believers-img {
+//           width: toRem(167);
+//           height: auto;
+
+//           &[alt="squid"] {
+//             width: toRem(105);
+//           }
+
+//           @media screen and (max-width: toEm(540)) {
+//             height: toRem(82);
+//             width: toRem(132);
+//             object-fit: contain;
+
+//             &[alt="squid"] {
+//               width: toRem(84);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   @keyframes eth-animation {
+//     from {
+//       transform: translateY(0.5rem);
+//     }
+//     to {
+//       transform: translateY(-7rem);
+//     }
+//   }

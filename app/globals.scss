@@ -1,6 +1,55 @@
 @import "./scss/colors";
 @import "./scss/base";
 
+html,
+html:focus-within {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+@media screen and (min-width: 100em) {
+  html,
+  html:focus-within {
+    font-size: 125%;
+  }
+}
+@media screen and (min-width: 120em) {
+  html,
+  html:focus-within {
+    font-size: 150%;
+  }
+}
+@media screen and (min-width: 156.25em) {
+  html,
+  html:focus-within {
+    font-size: 175%;
+  }
+}
+@media screen and (min-width: 200em) {
+  html,
+  html:focus-within {
+    font-size: 300%;
+  }
+}
+@media screen and (max-width: 38.74875em) {
+  html,
+  html:focus-within {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 21.87375em) {
+  html,
+  html:focus-within {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 18.75em) {
+  html,
+  html:focus-within {
+    font-size: 85%;
+  }
+}
+
 body {
   display: block;
   width: 100%;
@@ -36,4 +85,65 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-body-2 {
+  font-size: $font-fs-body-2;
+  font-weight: $font-fw-medium;
+}
+
+.text-display-2 {
+  font-size: $font-fs-display-2;
+}
+
+.text-display-1 {
+  font-size: $font-fs-display-1;
+}
+
+.gradient-primary {
+  background: $gradient-primary;
+}
+
+.gradient-secondary {
+  background: $gradient-secondary;
+}
+
+.text-heading-1 {
+  font-size: $font-fs-heading-1;
+}
+
+.text-heading-2 {
+  font-size: $font-fs-heading-2;
 }

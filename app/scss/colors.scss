@@ -11,23 +11,22 @@ $color-ui-blue: #3a0ca3;
 $color-ui-sky-blue: #4cc9f0;
 $color-ui-dark-blue: #020617;
 
-$gradient-primary: linear-gradient(
-  45deg,
-  var($color-ui-purple),
-  var($color-ui-violet)
-);
+$gradient-primary: linear-gradient(45deg, $color-ui-purple, $color-ui-violet);
+
 $gradient-secondary: linear-gradient(
   225deg,
-  var($color-ui-blue),
-  var($color-ui-sky-blue)
+  $color-ui-blue,
+  $color-ui-sky-blue
 );
+
 $gradient-gray: linear-gradient(
   45deg,
-  var($color-ui-gray-light) 7%,
-  var($color-ui-gray-light) 5%
+  $color-ui-gray-light 7%,
+  $color-ui-gray-light 5%
 );
+
 $gradient-border: linear-gradient(
   45deg,
-  var($color-ui-white) 21%,
-  var($color-ui-white) 0%
+  $color-ui-white 21%,
+  $color-ui-white 0%
 );
