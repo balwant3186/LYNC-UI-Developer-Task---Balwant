@@ -44,7 +44,7 @@
   .chains-section-title {
     z-index: 5;
     max-width: 20ch;
-    font-weight: var(--font-fw-black);
+    font-weight: $font-fw-black;
     margin-bottom: 4rem;
 
     .gradient-secondary {
