@@ -15,11 +15,11 @@ export default function Home() {
       <Header />
       <Hero />
 
-      {/* <BlockchainGaming />
+      <BlockchainGaming />
       <PowerUpSection />
 
-      <GamingSection /> */}
-      {/* 
+      <GamingSection />
+
       <ProductSuite />
 
       <Chains />
@@ -28,7 +28,7 @@ export default function Home() {
 
       <Believers />
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

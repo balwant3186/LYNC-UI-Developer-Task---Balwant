@@ -24,6 +24,7 @@ const GamingSection = () => {
             className="game-animatiom"
             width={500}
             height={200}
+            unoptimized
           />
         </div>
         <div className="grid-items-container">
@@ -50,6 +51,7 @@ const GamingSection = () => {
               className="medium-animation"
               width={500}
               height={200}
+              unoptimized
             />
           </div>
         </div>
