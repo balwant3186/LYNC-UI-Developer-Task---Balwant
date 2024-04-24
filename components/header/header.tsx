@@ -45,6 +45,14 @@ const Header = () => {
                 Blogs
               </a>
               <a
+                href="https://lync.world/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="navbar-links"
+              >
+                LYNC Portal
+              </a>
+              <a
                 href="http://request-demo.lync.world/"
                 target="_blank"
                 rel="noopener noreferrer"

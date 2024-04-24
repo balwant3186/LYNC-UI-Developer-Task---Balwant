@@ -12,13 +12,13 @@ import ProductSuite from "@/components/product-suite/product-suite";
 export default function Home() {
   return (
     <div>
-      {/* <Header />
-      <Hero /> */}
+      <Header />
+      <Hero />
 
-      <BlockchainGaming />
+      {/* <BlockchainGaming />
       <PowerUpSection />
 
-      <GamingSection />
+      <GamingSection /> */}
       {/* 
       <ProductSuite />
 
