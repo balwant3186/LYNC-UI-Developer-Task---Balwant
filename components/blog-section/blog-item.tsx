@@ -21,7 +21,12 @@ const BlogItem = () => {
           infrastructure.
         </p>
         <p className="subtext text-body-2">
-          <a href="https://docs.lync.world/" className="cta-btn text-body-2">
+          <a
+            href="https://docs.lync.world/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="cta-btn text-body-2"
+          >
             Read more
           </a>
         </p>

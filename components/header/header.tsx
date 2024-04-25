@@ -80,7 +80,12 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <a href="/form.html" className="navbar-cta-btn">
+          <a
+            href="https://lync.world/form.html"
+            target="_blank"
+            className="navbar-cta-btn"
+            rel="noopener noreferrer"
+          >
             Get Started
             <Image
               src="/assets/right-arrow.svg"

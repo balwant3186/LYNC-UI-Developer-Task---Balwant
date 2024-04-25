@@ -18,8 +18,10 @@ const Hero = () => {
         </p>
         <div className="hero-action-links-container flex justify-center">
           <a
-            href="/form.html"
+            href="https://lync.world/form.html"
+            target="_blank"
             className="hero-action-links gradient-secondary flex justify-center items-center text-body-2"
+            rel="noopener noreferrer"
           >
             Get Started{" "}
             <Image

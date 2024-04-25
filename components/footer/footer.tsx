@@ -17,7 +17,9 @@ const Footer = () => {
         Let{`'`}s make it big together!!!
       </h2>
       <a
-        href="/form.html"
+        href="https://lync.world/form.html"
+        target="_blank"
+        rel="noopener noreferrer"
         className="footer-cta-btn flex justify-center items-center"
       >
         Get Started
