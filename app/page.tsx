@@ -14,7 +14,7 @@ import ValueableReviews from "@/components/valuable-reviews/valuable-reviews";
 export default function Home() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
 
       <BlockchainGaming />
@@ -24,17 +24,17 @@ export default function Home() {
 
       <ProductSuite />
 
-      <Chains /> */}
+      <Chains />
 
-      {/* <Blog /> */}
+      <Blog />
 
       <ValueableReviews />
 
-      {/* <Community />
+      <Community />
 
       <Believers />
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
