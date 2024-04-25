@@ -1,7 +1,7 @@
 @import "../../app/scss/base.scss";
 @import "../../app/scss/colors.scss";
 
-.valueable-reviews {
+.blog-section {
   margin-top: 9.0625rem;
   padding-bottom: 7.125rem;
   position: relative;
@@ -30,11 +30,26 @@
     background-position: center;
   }
 
+  .blog-subtext {
+    z-index: 5;
+    margin-bottom: 4rem;
+    max-width: 46ch;
+    font-weight: $font-fw-semibold;
+    color: $color-ui-white-60;
+
+    @media screen and (max-width: 62em) {
+      font-size: 1.125rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1rem;
+    }
+  }
+
   .title {
     font-weight: $font-fw-black;
-    margin-bottom: 3.9375rem;
 
-    .gradient-tertiary {
+    .gradient-secondary {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -55,7 +70,7 @@
     }
   }
 
-  .reviews-cards-container {
+  .blog-container {
     z-index: 2;
     display: grid;
     grid-template-columns: 19rem 19rem 19rem;
@@ -69,7 +84,7 @@
       grid-template-columns: 19rem;
     }
 
-    .review-card {
+    .blog-card {
       border-radius: 1.25rem;
 
       background: linear-gradient(
@@ -85,14 +100,18 @@
         font-size: $font-fs-caption;
       }
 
-      .review-card-text {
+      .blog-card-text {
         padding: 3rem 1.3rem 0rem 1.3rem;
       }
 
+      .blog-card-img {
+        width: 100%;
+      }
+
       .subtext {
+        margin-top: 1rem;
         display: block;
         color: $color-ui-gray-75;
-        max-width: 20ch;
         font-weight: $font-fw-bold;
         font-size: $font-fs-extra-small-label;
 
@@ -102,11 +121,26 @@
         }
       }
 
-      .review-card-footer-container {
+      .blog-card-footer-container {
         padding: 1.3rem;
         gap: 1rem;
-        margin-top: 1rem;
+        margin-top: -10px;
         background-color: #1d143c;
+
+        .cta-btn {
+          background: $color-ui-white;
+          padding: 0.5rem 0.875rem;
+          font-size: 0.875rem;
+          color: $color-ui-black;
+          font-weight: $font-fw-bold;
+          border-radius: 2rem;
+          width: max-content;
+          margin-top: 1.5rem;
+
+          @media screen and (max-width: 33.75em) {
+            margin-top: 0.75rem;
+          }
+        }
       }
 
       &:nth-of-type(n + 4) {

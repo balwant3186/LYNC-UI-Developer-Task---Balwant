@@ -1,5 +1,6 @@
 import Believers from "@/components/believers/believers";
 import BlockchainGaming from "@/components/blockchain-gaming/blockchain-gaming";
+import Blog from "@/components/blog-section/blog";
 import Chains from "@/components/chains/chains";
 import Community from "@/components/community/community";
 import Footer from "@/components/footer/footer";
@@ -24,6 +25,8 @@ export default function Home() {
       <ProductSuite />
 
       <Chains /> */}
+
+      <Blog />
 
       <ValueableReviews />
 
