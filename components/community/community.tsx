@@ -10,8 +10,9 @@ const Community = () => {
           src="/assets/community-pattern.png"
           alt="community-pattern"
           className="community-pattern-img"
-          width={800}
+          width={1000}
           height={600}
+          quality={100}
         />
         <div className="content flex column items-center">
           <h2 className="content-title text-display-2 text-center">

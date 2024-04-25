@@ -30,7 +30,7 @@ export default function Home() {
 
       <ValueableReviews /> */}
 
-      {/* <Community /> */}
+      <Community />
 
       <Believers />
 
