@@ -3,6 +3,7 @@
 .community-section {
   position: relative;
   padding-bottom: 11.25rem;
+  padding-top: 9.375rem;
   width: 100%;
 
   @media screen and (max-width: 62em) {
@@ -11,6 +12,7 @@
 
   @media screen and (max-width: 33.75em) {
     padding-bottom: 6.25rem;
+    padding-top: 5rem;
   }
 
   &::after {
