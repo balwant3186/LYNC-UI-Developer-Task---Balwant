@@ -15,24 +15,24 @@ export default function Home() {
   return (
     <div>
       {/* <Header />
-      <Hero />
+      <Hero /> */}
 
-      <BlockchainGaming />
+      {/* <BlockchainGaming />
       <PowerUpSection />
 
       <GamingSection />
 
-      <ProductSuite />
+      <ProductSuite /> */}
 
-      <Chains />
+      {/* <Chains />
 
       <Blog />
 
-      <ValueableReviews />
+      <ValueableReviews /> */}
 
-      <Community />
+      {/* <Community /> */}
 
-      <Believers /> */}
+      <Believers />
 
       <Footer />
     </div>

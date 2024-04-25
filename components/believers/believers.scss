@@ -20,10 +20,8 @@
     display: block;
     width: 100%;
     height: 27.25rem;
-    background: url("/assets/believers-section-overlay.png");
-    background-position: center;
-    background-size: 100% 22.563rem;
-    background-repeat: no-repeat;
+    background: url("/assets/believers-section-overlay.png") center/100%
+      22.563rem no-repeat;
   }
 
   .believers-title {
@@ -62,7 +60,6 @@
         rgba(217, 217, 217, 0.05) 116.98%
       );
       backdrop-filter: blur(73px);
-
       padding: 0 1rem;
 
       @media screen and (max-width: 33.75em) {
