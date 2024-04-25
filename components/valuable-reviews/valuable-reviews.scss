@@ -1,0 +1,136 @@
+@import "../../app/scss/base.scss";
+@import "../../app/scss/colors.scss";
+
+.valueable-reviews {
+  margin-top: 9.0625rem;
+  padding-bottom: 7.125rem;
+  position: relative;
+  width: 100%;
+  padding: 0 5rem;
+
+  @media screen and (max-width: 48em) {
+    padding: 0 1.875rem;
+  }
+
+  @media screen and (max-width: 26.875em) {
+    padding: 0 1.25rem;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/product-suit-background.svg");
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .title {
+    font-weight: $font-fw-black;
+    margin-bottom: 3.9375rem;
+
+    .gradient-tertiary {
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 62em) {
+      font-size: 2rem;
+      margin-bottom: 2.8125rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 33.75em) {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .reviews-cards-container {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 19rem 19rem 19rem;
+    grid-gap: 1rem;
+
+    @media screen and (max-width: 62em) {
+      grid-template-columns: 19rem 19rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      grid-template-columns: 19rem;
+    }
+
+    .review-card {
+      border-radius: 1.25rem;
+
+      background: linear-gradient(
+        to bottom,
+        hsl(229, 84%, 5%, 0),
+        hsl(229, 84%, 5%, 0.8)
+      );
+      margin-bottom: 4rem;
+      overflow: hidden;
+
+      .card-title {
+        font-weight: $font-fw-black;
+        font-size: $font-fs-caption;
+      }
+
+      .review-card-text {
+        padding: 3rem 1.3rem 0rem 1.3rem;
+      }
+
+      .subtext {
+        display: block;
+        color: $color-ui-gray-75;
+        max-width: 20ch;
+        font-weight: $font-fw-bold;
+        font-size: $font-fs-extra-small-label;
+
+        @media screen and (max-width: 33.75em) {
+          font-size: 0.625rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .review-card-footer-container {
+        padding: 1.3rem;
+        gap: 1rem;
+        margin-top: 1rem;
+        background-color: #1d143c;
+      }
+
+      &:nth-of-type(n + 4) {
+        margin-top: -3.875rem;
+      }
+
+      @media screen and (max-width: 62em) {
+        &:nth-of-type(n + 4) {
+          margin-top: 0;
+        }
+        &:nth-of-type(n + 3) {
+          margin-top: -0.625rem;
+        }
+      }
+
+      @media screen and (max-width: 48em) {
+        &:nth-of-type(n + 3) {
+          margin-top: 0;
+        }
+
+        &:nth-of-type(n + 2) {
+          margin-top: -0.625rem;
+        }
+      }
+    }
+  }
+}

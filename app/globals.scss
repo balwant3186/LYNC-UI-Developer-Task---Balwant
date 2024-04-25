@@ -145,9 +145,17 @@ select {
   text-align: center;
 }
 
+.text-body-1 {
+  font-size: $font-fs-body-1;
+}
+
 .text-body-2 {
   font-size: $font-fs-body-2;
   font-weight: $font-fw-medium;
+}
+
+.text-small-label {
+  font-size: $font-fs-small-label;
 }
 
 .text-display-2 {
@@ -164,6 +172,10 @@ select {
 
 .gradient-secondary {
   background: $gradient-secondary;
+}
+
+.gradient-tertiary {
+  background: $gradient-tertiary;
 }
 
 .text-heading-1 {

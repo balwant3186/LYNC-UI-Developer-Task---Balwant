@@ -8,11 +8,12 @@ import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
 import PowerUpSection from "@/components/power-up-section/power-up-section";
 import ProductSuite from "@/components/product-suite/product-suite";
+import ValueableReviews from "@/components/valuable-reviews/valuable-reviews";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
 
       <BlockchainGaming />
@@ -22,13 +23,15 @@ export default function Home() {
 
       <ProductSuite />
 
-      <Chains />
+      <Chains /> */}
 
-      <Community />
+      <ValueableReviews />
+
+      {/* <Community />
 
       <Believers />
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

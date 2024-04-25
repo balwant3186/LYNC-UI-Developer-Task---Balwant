@@ -19,6 +19,12 @@ $gradient-secondary: linear-gradient(
   $color-ui-sky-blue
 );
 
+$gradient-tertiary: linear-gradient(
+  45deg,
+  $color-ui-violet,
+  $color-ui-violet-dark
+);
+
 $gradient-gray: linear-gradient(
   45deg,
   $color-ui-gray-light 7%,
