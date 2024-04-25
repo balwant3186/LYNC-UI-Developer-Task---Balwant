@@ -1,19 +1,30 @@
+"use client";
+
 import Image from "next/image";
 
 import "./header.scss";
 
 const Header = () => {
+  const toggleExpandClass = () => {
+    const navLinksContainer = document.getElementById("nav-links-container");
+    navLinksContainer?.classList.toggle("expanded");
+  };
+
   return (
     <>
       <header className="header-container">
         <nav className="navbar-container">
-          <button id="nav-menu-btn" className="navbar-menu-btn">
+          <button
+            id="nav-menu-btn"
+            className="navbar-menu-btn"
+            onClick={toggleExpandClass}
+          >
             <Image
               src="/assets/menu.png"
               alt="menu"
               className="menu-img"
-              width={20}
-              height={20}
+              width={40}
+              height={40}
             />
           </button>
           <div className="navbar-left-container">
@@ -60,7 +71,11 @@ const Header = () => {
               >
                 Request a demo
               </a>
-              <button id="close-btn" className="navbar-links close-btn">
+              <button
+                id="close-btn"
+                className="navbar-links close-btn"
+                onClick={toggleExpandClass}
+              >
                 Close
               </button>
             </div>

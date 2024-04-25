@@ -109,6 +109,22 @@ select {
   }
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: inherit;
+  background-color: transparent;
+  color: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
 .flex {
   display: flex;
 }
