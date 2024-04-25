@@ -51,13 +51,13 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/lync-world/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-links"
+                className="social-links discord items-center flex justify-center"
               >
                 <Image
-                  src="/assets/linkedin.png"
-                  alt="linkedin"
-                  width={50}
-                  height={50}
+                  src="/assets/discord.svg"
+                  alt="discord"
+                  width={30}
+                  height={30}
                 />
               </a>
               <a
