@@ -22,7 +22,7 @@ export default function Home() {
 
       <GamingSection />
 
-      {/* <ProductSuite /> */}
+      <ProductSuite />
 
       {/* <Chains />
 

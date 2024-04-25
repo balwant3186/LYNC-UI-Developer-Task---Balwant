@@ -105,6 +105,22 @@
       }
 
       @media screen and (max-width: 48em) {
+        margin-bottom: 1rem;
+        padding: 0;
+
+        .product-card-img {
+          display: none;
+        }
+
+        .card-title {
+          margin-top: 0;
+        }
+
+        .subtext {
+          margin-top: 0;
+          line-height: 1.35;
+        }
+
         &:nth-of-type(n + 3) {
           margin-top: 0;
         }
