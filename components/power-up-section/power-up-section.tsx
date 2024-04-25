@@ -37,8 +37,9 @@ const PowerUpSection = () => {
           src="/assets/eth-animation.png"
           alt="eth"
           className="eth-animation-img"
-          width="300"
-          height="200"
+          width={800}
+          height={400}
+          quality={100}
         />
       </div>
     </section>

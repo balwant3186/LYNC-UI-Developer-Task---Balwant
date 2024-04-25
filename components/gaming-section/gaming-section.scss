@@ -35,6 +35,12 @@
 
     @media screen and (max-width: 68.75em) {
       grid-template-columns: 1fr;
+      grid-gap: 5rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
     }
 
     .grid-large-item {
@@ -61,6 +67,7 @@
 
         @media screen and (max-width: 33.75em) {
           font-size: 1rem;
+          max-width: 30ch;
         }
       }
 
@@ -74,6 +81,7 @@
         @media screen and (max-width: 33.75em) {
           font-size: 0.625rem;
           margin-top: 0.5rem;
+          max-width: 30ch;
         }
       }
 

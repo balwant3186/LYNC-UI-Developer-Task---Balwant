@@ -17,12 +17,12 @@ export default function Home() {
       <Header />
       <Hero />
 
-      {/* <BlockchainGaming />
+      <BlockchainGaming />
       <PowerUpSection />
 
       <GamingSection />
 
-      <ProductSuite /> */}
+      {/* <ProductSuite /> */}
 
       {/* <Chains />
 
